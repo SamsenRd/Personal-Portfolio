@@ -454,19 +454,14 @@ h4{
         font-size: 14px;
     }
 
-    .header-content{
-        flex-direction: column;
-        align-items: center;
-    }
-
     .header {
         padding-top: 5px; 
     }
 
-    /* .intro-content{
+    .intro-content{
         flex-direction: column; 
         align-items: center;
-    } */
+    }
 
     .headshot {
         margin-right: 0; 
