@@ -448,3 +448,129 @@ h4{
     text-align: center;
     color:#e8e9eb;
 }
+
+@media only screen and (max-width: 600px) {
+    body {
+        font-size: 14px;
+    }
+
+    .header {
+        padding-top: 5px; 
+    }
+
+    .intro-content {
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    .headshot {
+        margin-right: 0; 
+    }
+
+    .name {
+        position: static; 
+        font-size: 28px; 
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .role {
+        font-size: 50px; 
+        padding-left: 0; 
+        text-align: center;
+    }
+
+    .links {
+        padding-left: 0; 
+        justify-content: center;
+    }
+
+    .link {
+        font-size: 18px; 
+        margin-bottom: 10px;
+    }
+
+    .projects {
+        padding-bottom: 40px; 
+    }
+
+    .divider {
+        width: 200px; 
+    }
+
+    .work-section {
+        margin-top: 20px; 
+    }
+
+    .container {
+        width: 100%; 
+        margin-bottom: 20px; 
+    }
+
+    .middle {
+        top: 50%;
+    }
+
+    .img {
+        width: 100%; 
+        height: auto;
+    }
+
+    .languages {
+        margin-top: 10px; 
+    }
+
+    .about-me {
+        margin-bottom: 40px; 
+    }
+
+    .container-about-me {
+        max-width: 100%; 
+    }
+
+    .cert-title-heading {
+        font-size: 2em; 
+    }
+
+    .currently-enrolled-card {
+        width: 80%; 
+    }
+
+    .card-order {
+        width: 100%;
+    }
+
+    .contact {
+        padding-top: 15px; 
+        padding-bottom: 10px; 
+    }
+
+    .logos {
+        gap: 10px; 
+    }
+
+    .resume-card {
+        margin-top: 20px; 
+    }
+
+    .resume-border {
+        width: 100%; 
+    }
+
+    .arrow-down {
+        font-size: 80px; 
+    }
+
+    .resume-title {
+        margin-top: 20px; 
+    }
+
+    .resume-btn {
+        margin-top: 10px; 
+        margin-bottom: 15px; 
+    }
+
+    .copywrite {
+        padding: 20px;
+    }
+}
