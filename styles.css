@@ -1,18 +1,25 @@
 html{
     scroll-behavior: smooth;
+    width: 100%;
   }
 
 body{
     margin: 0;
     padding: 0;
     font-family: 'Raleway', sans-serif;
+    background-color: white;
 }
 
 .header {
-    background-color: #861657;
+    background-color: #EF036C;
     color: #e8e9eb;
-    position: relative;
     padding-top: 10px;
+}
+
+.header-info{
+    max-width: 1700px;
+    display: block;
+    margin: 0px auto;
 }
 
 .intro-content{
@@ -21,10 +28,12 @@ body{
     align-items: center;
     flex-wrap: wrap;
     padding-bottom: 30px;
+    background-color: white;
+    margin: 40px 30px 20px 30px;
+    box-shadow: 15px 20px black;
 }
 
 .intro-text {
-    display: flex;
     flex-direction: column;
 }
 
@@ -37,22 +46,20 @@ body{
 }
 
 .name{
-    font-size: 35px;
-    position: absolute;
-    top: 30px;
-    left: 50px;
-    color: #e8e9eb;
+    font-size: 3em;
+    color: black;
     text-decoration: none;
     font-weight: 300;
 }
 
-.role, .links{
+.role, .links, .name{
     padding-left: 50px;
 }
 
 .role{
-    font-size:70px;
-    color: #b3e510;
+    font-size:90px;
+    color: black;
+    font-weight: bolder;
     padding-bottom: 0;
 }
 
@@ -74,9 +81,9 @@ body{
 .link {
     background-image: linear-gradient(
         to right,
-        #b3e510,
-        #b3e510 50%,
-        #e8e9eb 50%
+        #EE72F8,
+        #EE72F8 50%,
+        black 50%
       );
       background-size: 200% 100%;
       background-position: -100%;
@@ -91,7 +98,7 @@ body{
 
 .link:before{
     content: '';
-    background: #b3e510;
+    background: #EE72F8;
     display: block;
     position: absolute;
     bottom: -3px;
@@ -113,9 +120,7 @@ body{
 /* MY WORK SECTION */
 
 .projects{
-    margin-bottom: 0;
-    background-color: #e8e9eb;
-    padding-top: 1px;
+    margin: 0 auto;
     padding-bottom: 80px;
 }
 
@@ -124,6 +129,7 @@ body{
     font-size: 3em;
     font-weight: 600;
     margin-bottom: 15px;
+    margin-top: 60px;
 }
 
 .divider{
@@ -149,7 +155,9 @@ body{
     justify-content: center;
     align-items: center;
     gap: 30px;
-    margin-top: 40px;
+    margin: 40px auto 0;
+    max-width: 1400px;
+    width: 100%;
 }
 
 .container{
@@ -187,17 +195,18 @@ body{
 }
 
 .text{
-    background-color: #861657;
+    background-color: #EE72F8;
     color: white;
     font-size: 30px;
     padding: 20px 35px;
     border-radius: 10px;
     cursor: pointer;
     border: none;
+    box-shadow: 0 0 5px black;
 }
 
 .text:active {
-    background-color: #c11f7e;
+    background-color: #EE72F8;
     transform: translateY(4px);
   }
 
@@ -205,7 +214,7 @@ body{
     text-align: center;
     margin-top: 20px;
     width: 250px;
-    background-color: #b3e510;
+    background-color: #31EC56;
     color: black;
     font-size: 15px;
     padding: 15px 25px;
@@ -231,25 +240,26 @@ body{
 /* ABOUT ME SECTION */
 
 .about-me{
-    background-color: #b3e510;
+    background-color: #31EC56;
     text-align: center;
-    margin-bottom: 60px;
+    margin-bottom: 0px;
 }
 
 .container-about-me{
-    /* background-color: #e8e9eb;
-    border: 7px solid black;
-    border-radius: 20px;
-    box-shadow: 5px 5px 25px black; */
-    padding: 20px;
-    max-width: 90%;
-    margin: auto;
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1700px;
     font-size: 19px;
+    padding-top: 10px;
 }
 
 .container-content{
-    margin-bottom: 50px;
+    margin: 40px 30px 20px 30px;
     text-align: left;
+    background-color: white;
+    padding: 30px;
+    box-shadow: 15px 20px black;
 }
 
 .title-about-me{
@@ -265,21 +275,26 @@ p{
 
 /* CERTIFICATIONS SECTION */
 
+.cert-title{
+    margin-top: 80px;
+}
+
 .cert-title-heading{
     text-align: center;
     font-size: 3em;
     font-weight: 600;
-    margin-bottom: 15px;
+    margin: 15px;
 }
 
 .currently-enrolled-card{
     text-align: center;
     /* width: 400px; */
-    width: 50%;
+    /* width: 50%; */
+    max-width: 500px;
     margin: 30px auto;
     border: 1px dotted black;
     /* padding-bottom: 15px; */
-    padding: 10px;
+    padding: 20px;
 }
 
 .card-order{
@@ -288,7 +303,8 @@ p{
     justify-content: center;
     align-items: center;
     gap: 50px;
-    width: 80%;
+    max-width: 1300px;
+    /* width: 80%; */
     margin: 30px auto 60px auto;
     text-align: center;
 }
@@ -339,17 +355,16 @@ h4{
 
 .btn-credential{
     border: none;
-    background-color:#861657;
+    background-color:#EF036C;
     color: white;
     padding: 10px 15px;
     border-radius: 5px;
     font-size: 15px;
-    font-weight: 300;
+    font-weight: 600;
 }
 
 .btn-credential:hover{
-    background-color:#861657;
-    opacity: 80%;
+    background-color:#f75fa3;
     cursor: pointer;
 }
 
@@ -360,9 +375,15 @@ h4{
 /* CONTACT ME SECTION */
 
 .contact{
-    background-color: #b3e510;
+    background-color: #f29af8;
     padding-top: 20px;
     padding-bottom: 15px;
+}
+
+.container-contact{
+    width: 100%;
+    max-width: 1700px;
+    margin: 0 auto;
 }
 
 .section-title{
@@ -401,52 +422,42 @@ h4{
 
 .arrow-down{
     margin-top: 15px;
-    font-size: 100px;
-    animation: grow 4s ease-in-out infinite;
+    font-size: 80px;
+    /* animation: grow 4s ease-in-out infinite; */
 }
 
 .resume-btn{
+    font-size: 20px;
     margin-top: 15px;
     margin-bottom: 25px;
     background-color: white;
-    color: #861657;
+    color: black;
+    font-weight: 600;
     border: none;
-    padding: 15px 30px;
+    padding: 15px 50px;
     border-radius: 15px;
     box-shadow: 0 0 5px black;
-    animation: grow 4s ease-in-out infinite;
+    /* animation: grow 4s ease-in-out infinite; */
 }
 
 .resume-btn:hover{
     cursor: pointer;
+    background-color: #d9f289
 }
 
 .resume-btn:active{
     transform: translateY(4px);
 }
 
-@keyframes grow {
-    0% {
-      font-size: 1em;
-    }
-    50% {
-      font-size: 2em;
-    }
-    100% {
-      font-size: 1em;
-    }
-  }
-
-
 /* BOTTOM SECTION */
 .copywrite{
-    background-color: #861657;
+    background-color: white;
     padding: 40px;
 }
 
 .copywrite-text{
     text-align: center;
-    color:#e8e9eb;
+    color:black;
 }
 
 @media only screen and (max-width: 600px) {
@@ -459,19 +470,21 @@ h4{
     }
 
     .intro-content{
+        display: flex;
         flex-direction: column; 
+        justify-content: center;
         align-items: center;
     }
 
     .headshot {
-        margin-right: 0; 
+        margin: 10px auto;
+        display: block; 
     }
 
     .name {
-        position: static; 
         font-size: 28px; 
-        text-align: center;
         margin-bottom: 10px;
+        text-align: center;
     }
 
     .role {
@@ -503,8 +516,9 @@ h4{
     }
 
     .container {
-        width: 100%; 
-        margin-bottom: 20px; 
+        width: 100%;
+        max-width: 400px; 
+        height: auto;
     }
 
     .middle {
@@ -512,7 +526,8 @@ h4{
     }
 
     .img {
-        width: 100%; 
+        width: 100%;
+        max-width: 400px; 
         height: auto;
     }
 
@@ -554,7 +569,7 @@ h4{
     }
 
     .resume-border {
-        width: 100%; 
+        width: 80%; 
     }
 
     .arrow-down {
@@ -574,3 +589,199 @@ h4{
         padding: 20px;
     }
 }
+
+
+@media (min-width: 601px) and (max-width: 900px) {
+
+.header {
+    padding-top: 5px; 
+}
+
+.intro-content{
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+}
+
+.headshot {
+    margin: 10px auto;
+    display: block; 
+}
+
+.name {
+    font-size: 28px; 
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.role {
+    font-size: 50px; 
+    padding-left: 0; 
+    text-align: center;
+}
+
+.link{
+    text-decoration: none;
+    color: #e8e9eb;
+    font-weight: 600;
+    font-size: 20px;
+    position: relative;
+}
+
+.links{
+    display: flex;
+    justify-content: start;
+    text-align: start;
+    gap: 20px;
+}
+
+.link {
+    background-image: linear-gradient(
+        to right,
+        #EE72F8,
+        #EE72F8 50%,
+        black 50%
+      );
+      background-size: 200% 100%;
+      background-position: -100%;
+      display: inline-block;
+      padding: 5px 0;
+      position: relative;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      transition: all 0.5s ease-in-out;
+
+  }
+
+.link:before{
+    content: '';
+    background: #EE72F8;
+    display: block;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    transition: all 0.5s ease-in-out;
+  }
+
+.link:hover{
+    background-position: 0;
+}
+
+.link:hover::before{
+    width: 100%;
+}
+
+}
+
+@media (min-width: 901px){
+    .header {
+        background-color: #EF036C;
+        color: #e8e9eb;
+        padding-top: 10px;
+    }
+    
+    .header-info{
+        max-width: 1700px;
+        display: block;
+        margin: 0px auto;
+    }
+    
+    .intro-content{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        padding-bottom: 30px;
+        background-color: white;
+        margin: 40px 30px 20px 30px;
+        box-shadow: 15px 20px black;
+    }
+    
+    .intro-text {
+        flex-direction: column;
+    }
+    
+    .role, .headshot{
+        margin-top: 30px;
+    }
+    
+    .headshot{
+        margin-right: 50px;
+    }
+    
+    .name{
+        font-size: 3em;
+        color: black;
+        text-decoration: none;
+        font-weight: 300;
+    }
+    
+    .role, .links, .name{
+        padding-left: 50px;
+    }
+    
+    .role{
+        font-size:90px;
+        color: black;
+        font-weight: bolder;
+        padding-bottom: 0;
+    }
+    
+    .link{
+        text-decoration: none;
+        color: #e8e9eb;
+        font-weight: 600;
+        font-size: 20px;
+        position: relative;
+    }
+    
+    .links{
+        display: flex;
+        justify-content: start;
+        text-align: start;
+        gap: 20px;
+    }
+    
+    .link {
+        background-image: linear-gradient(
+            to right,
+            #EE72F8,
+            #EE72F8 50%,
+            black 50%
+          );
+          background-size: 200% 100%;
+          background-position: -100%;
+          display: inline-block;
+          padding: 5px 0;
+          position: relative;
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          transition: all 0.5s ease-in-out;
+    
+      }
+    
+    .link:before{
+        content: '';
+        background: #EE72F8;
+        display: block;
+        position: absolute;
+        bottom: -3px;
+        left: 0;
+        width: 0;
+        height: 3px;
+        transition: all 0.5s ease-in-out;
+      }
+    
+    .link:hover{
+        background-position: 0;
+    }
+    
+    .link:hover::before{
+        width: 100%;
+    }
+    
+}
+
