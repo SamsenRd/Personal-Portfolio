@@ -591,6 +591,91 @@ h4{
 }
 
 
+@media (min-width: 100px){
+    .header {
+        padding-top: 5px; 
+    }
+    
+    .intro-content{
+        display: flex;
+        flex-direction: column; 
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .headshot {
+        margin: 10px auto;
+        display: block; 
+    }
+    
+    .name {
+        font-size: 28px; 
+        margin-bottom: 10px;
+        text-align: center;
+    }
+    
+    .role {
+        font-size: 50px; 
+        padding-left: 0; 
+        text-align: center;
+    }
+    
+    .link{
+        text-decoration: none;
+        color: #e8e9eb;
+        font-weight: 600;
+        font-size: 20px;
+        position: relative;
+    }
+    
+    .links{
+        display: flex;
+        justify-content: start;
+        text-align: start;
+        gap: 20px;
+        max-width: 80%;
+        margin: 0 auto;
+    }
+    
+    .link {
+        background-image: linear-gradient(
+            to right,
+            #EE72F8,
+            #EE72F8 50%,
+            black 50%
+          );
+          background-size: 200% 100%;
+          background-position: -100%;
+          display: inline-block;
+          padding: 5px 0;
+          position: relative;
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          transition: all 0.5s ease-in-out;
+    
+      }
+    
+    .link:before{
+        content: '';
+        background: #EE72F8;
+        display: block;
+        position: absolute;
+        bottom: -3px;
+        left: 0;
+        width: 0;
+        height: 3px;
+        transition: all 0.5s ease-in-out;
+      }
+    
+    .link:hover{
+        background-position: 0;
+    }
+    
+    .link:hover::before{
+        width: 100%;
+    }
+}
+
 @media (min-width: 601px) and (max-width: 900px) {
 
 .header {
