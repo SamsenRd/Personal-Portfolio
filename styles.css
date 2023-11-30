@@ -510,8 +510,8 @@ h4{
 
 @media (max-width: 383px){
     .links{
-        margin-left: 0.9375em;
-        margin-right: 0.9375em;
+        margin-left: 1em;
+        margin-right: 1em;
         text-align: center;
     }
 
