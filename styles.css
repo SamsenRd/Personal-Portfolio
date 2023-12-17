@@ -508,13 +508,13 @@ h4{
     }
 }
 
-@media (max-width:603px){
+@media (max-width:700px){
     .role{
         text-align: center;
     }
 }
 
-@media (max-width: 383px){
+@media (max-width: 480px){
     .links{
         margin-left: 1.5em;
         margin-right: 1.5em;
