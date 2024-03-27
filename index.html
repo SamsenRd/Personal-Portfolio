@@ -17,21 +17,29 @@
 </head>
 <body>
     <header>
-        <div class="container-header">
-            <section class="header-info">
-                <h3 class="name">Samantha Foigel</h3>
-                    <h1 class="role">Front-End Developer</h1>
-                    <div class="links">
-                        <a href="#projects" class="link">My Work</a>
-                        <a href="#about-me" class="link">About Me</a>
-                        <a href="#certifications" class="link">Certifications</a>
-                        <a href="#content" class="link">Contact</a>
-                    </div>
+        <nav>
+            <ul class="sidebar">
+                <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                <li><a href="#projects" class="link">Projects</a></li>
+                <li><a href="#about-me" class="link">About</a></li>
+                <li><a href="#certifications" class="link">Credentials</a></li>
+                <li><a href="#content" class="link">Contact</a></li>
+            </ul>
+            <ul class="nav-container">
+                <li><a href="#" class="link">Samantha Foigel</a></li>
+                <li class="hideOnMobile"><a href="#projects" class="link">Projects</a></li>
+                <li class="hideOnMobile"><a href="#about-me" class="link">About</a></li>
+                <li class="hideOnMobile"><a href="#certifications" class="link">Credentials</a></li>
+                <li class="hideOnMobile"><a href="#content" class="link">Contact</a></li>
+                <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+            </ul>
+        </nav>
+        <section class="blank-space section-header"></section>
+            <section class="asymmetric">
+                <img src="Images/cropped-headshot.png" class="header-img" width="250px">
+                <h1 class="header-title"><span class="header-word">Hello!</span> I'm Samantha.<br>I'm a frontend <br> developer &<br> web designer.</h1>
             </section>
-            <section class="header-img">
-                <img src="Images/cropped-headshot.png" style="border-radius: 50%; box-shadow: 0 0 15px black;" alt="A photo of Samantha" class="headshot" width="340px" height="320px">
-            </section>
-        </div>
+        <section class="blank-space"></section>
     </header>
     <main>
         <section class="projects" id="projects">
@@ -155,7 +163,7 @@
                 </div>
         </section>
 
-        <section class="about-me" id="about-me">
+        <section class="asymmetric about-me-section">
             <div class="container-about-me">
                 <h1 class="title-about-me">About Me</h1>
                 <div class="divider divider-secondary">&#9733;</div>
@@ -163,14 +171,13 @@
                 <p>Hello, I'm Samantha!</p>
                 <p>I'm a Frontend Software Developer who's passionate about design, coding, and helping people.</p>
                 <p>Before making the switch into web development, I spent 7 years in different industries, sharpening my
-                     marketing and communication skills. I've had the privilege of working for the City of Toronto where I collaborated with public officials to create innovative solutions that benefit the community.
-                     I've also contributed my skills to a dynamic startup where I played a crucial role in their marketing efforts as well as customer success management.
-                     Additionally, I dedicated my time and expertise to a non-profit organization, where I focused on design and community empowerment.</p>  
+                    marketing and communication skills. I've had the privilege of working for the City of Toronto where I collaborated with public officials to create innovative solutions that benefit the community.
+                    I've also contributed my skills to a dynamic startup where I played a crucial role in their marketing efforts as well as customer success management.
+                    Additionally, I dedicated my time and expertise to a non-profit organization, where I focused on design and community empowerment.</p>  
                 <p>By integrating my design, customer success, and people skills into the tech industry and web development, I bring a user-centered touch to my work.
                     This unique blend of skills plays a crucial role in the creation of solutions that not only meets technical specs but also surpass the expectations of our end-users. This creates a more user-friendly and enjoyable digital experience that's built to last.</p>
                 <p>I'm excited to keep exploring new horizons in the tech world and continuing to learn from every challenge that comes my way.</p>
                 <p>Thanks for stopping by, and feel free to reach out!</p>
-            </div>
             </div>
         </section>
 
@@ -181,10 +188,10 @@
             </div>
 
             <div class="currently-enrolled-card">
-                <h4>Currently Enrolled in:</h4>
+                <h4 class="enrolled-card">Currently Enrolled in:</h4>
                 <a href="https://scrimba.com/learn/frontend" target="_blank">
                     <img src="Images/logos/scrimba-logo.svg" alt="scrimba logo" class="logo-img" width="145px">
-                    <h3 class="enrolled-title">The Frontend Developer Career Path</h3>
+                    <h3 class="enrolled-title">The Frontend Developer <br>Career Path</h3>
                 </a>
                 <h4>Scrimba</h4>
             </div>
@@ -268,38 +275,34 @@
         </section>
 
         <footer>
-            <section>
-                <div class="contact" id="content">
-                    <div class="container-contact">
-                        <h1 class="section-title">Get in Touch</h1>
-                        <div class="divider">&#9733;</div>
-                            <div class="logos">
-                                <a href="https://www.linkedin.com/in/samantha-foigel-86b556163/" target="_blank">
-                                    <img class="img-logo" src="Images/linkedin.svg" alt="LinkedIn Logo" width="40px">
-                                </a>
-                                
-                                <a href="https://github.com/SamsenRd" target="_blank">
-                                    <img class="img-logo" src="Images/github.svg" alt="Github Logo" width="40px">
-                                </a>
-                                <a href="mailto:samantha.foigel@gmail.com" target="_blank">
-                                    <img class="img-logo" src="Images/envelope.png" alt="Envelope emoji" width="40px">
-                                </a>
-
-                                <a href="https://www.fiverr.com/samanthafoigel/code-your-design-into-html-css-and-javascript" target="_blank">
-                                    <img class="img-logo" src="Images/fiverr.svg" alt="Fiverr Logo" width="40px">
-                                </a>
-                            </div>  
-                        
-                        <div class="resume-card">
-                            <div class="resume-border"></div>
-                            <h3 class="resume-title">Download my Resume!</h3>
-                            <div class="arrow-down">&#8595;</div>
-                            <a href="Resume/Samantha_Foigel_Resume.pdf" download="Samantha_Foigel_Resume">
-                                <button class="resume-btn">RESUME</button>
+            <section class="asymmetric">
+                <div class="container-contact">
+                    <h1 class="section-title">Get in Touch</h1>
+                    <div class="divider divider-secondary">&#9733;</div>
+                        <div class="logos">
+                            <a href="https://www.linkedin.com/in/samantha-foigel-86b556163/" target="_blank">
+                                <img class="img-logo" src="Images/logos/linkedin-new-icon.png" alt="LinkedIn Logo" width="50px">
                             </a>
-                        </div> 
-                    </div>
-                </div>   
+                            
+                            <a href="https://github.com/SamsenRd" target="_blank">
+                                <img class="img-logo" src="Images/logos/github-new-icon.svg" alt="Github Logo" width="40px">
+                            </a>
+                            <a href="mailto:samantha.foigel@gmail.com" target="_blank">
+                                <img class="img-logo" src="Images/logos/envelope-solid (1).svg" alt="Envelope emoji" width="40px">
+                            </a>
+
+                            <a href="https://www.fiverr.com/samanthafoigel/code-your-design-into-html-css-and-javascript" target="_blank">
+                                <img class="img-logo" src="Images/logos/fiverr.avif" alt="Fiverr Logo" width="50px">
+                            </a>
+                        </div>  
+                    
+                    <div class="resume-card">
+                        <div class="resume-border"></div>
+                        <a href="Resume/Samantha_Foigel_Resume.pdf" download="Samantha_Foigel_Resume">
+                            <h3 class="resume-title">Download my Resume!</h3>
+                        </a>
+                    </div> 
+                </div>
             </section>
             
             <section class="copywrite">
